@@ -10787,3 +10787,5 @@ G2L["44f"]["BackgroundTransparency"] = 1;
 G2L["44f"]["Name"] = [[Icon]];
 G2L["44f"]["Position"] = UDim2.new(0.38004, 0, 0, 0);
 
+_G.G2L = G2L
+return G2L
