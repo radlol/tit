@@ -29,8 +29,8 @@ if not screenGui then
 
 	local container = Instance.new("Frame")
 	container.Name = "Container"
-	container.AnchorPoint = Vector2.new(1, 0)
-	container.Position = UDim2.new(1, -20, 0, 20)
+	container.AnchorPoint = Vector2.new(1, 1) -- anchor to bottom-right
+	container.Position = UDim2.new(1, -20, 1, -40) -- move up a bit (higher offset)
 	container.Size = UDim2.new(0, SETTINGS.Width, 1, -20)
 	container.BackgroundTransparency = 1
 	container.Parent = screenGui
@@ -39,7 +39,7 @@ if not screenGui then
 	layout.Parent = container
 	layout.FillDirection = Enum.FillDirection.Vertical
 	layout.HorizontalAlignment = Enum.HorizontalAlignment.Right
-	layout.VerticalAlignment = Enum.VerticalAlignment.Top
+	layout.VerticalAlignment = Enum.VerticalAlignment.Bottom -- stack upward from the bottom
 	layout.Padding = UDim.new(0, 8)
 end
 
