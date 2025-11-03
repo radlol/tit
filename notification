@@ -1,5 +1,5 @@
 local TweenService = game:GetService("TweenService")
-local CoreGui = game:GetService("CoreGui")
+local CoreGui = (gethui and gethui()) or game:GetService("CoreGui")
 
 local SETTINGS = {
 	Width = 300,
